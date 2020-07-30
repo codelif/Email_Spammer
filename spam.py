@@ -19,7 +19,7 @@ def spammer():
     SMTP =  yagmail.SMTP(user=mail,password=pwd, host="smtp.gmail.com")
     # For storing number of times email has been sent.
     sent_times = 1
-    # While Loop so emails keep getting sent. To stop it most terminals have Ctrl+C shortcut to stop any running programming but you can also try doing Ctrl+Z if that doesn't Work
+    # While Loop so emails keep getting sent.
     while True:
         SMTP.send(to=destin,subject=''.join(random.choice(string.ascii_lowercase) for i in range(10)),contents="Main Body", attachments=None, cc=None, bcc=None)
         print(f"Mail has been sent {sent_times} times")
