@@ -1,7 +1,6 @@
 import string
 import os
 import random
-os.system("pip install yagmail")
 import yagmail
 
 # Destination Email
