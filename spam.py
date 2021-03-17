@@ -4,7 +4,6 @@ import random
 import tkinter
 import threading
 import sys
-os.system("pip install yagmail")
 import yagmail
 
 def spammer():
